@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorDark: crimson;
+  --colorLight: lightblue;
+}
+
+/*  body {width: 100vw;height: 100vh;display: flex;justify-content: center;	align-items: center;} */
+
+.container {
+  width: 816px;
+  height: 1056px;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "header header"
+    "left right";
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: yellow;
+}
+
+.header {
+  grid-area: header;
+  background: white;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+}
+
+.left {
+  grid-area: left;
+  /*  background: lightblue; */
+  padding: 10px 10px 0 0;
+  border-right: 1px solid rgba(51, 51, 51, 0.5);
+}
+
+.right {
+  grid-area: right;
+  /*  		background: green; */
+  padding: 10px 0 0 10px;
+}
+
+artcle {
+  border-left: 1px solid red;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--colorDark);
+  margin-bottom: 15px;
+}
+
+.name .first-name {
+  color: white;
+  font-weight: 400;
+  text-shadow: -1px -1px 0 var(--colorDark), -1px 1px 0 var(--colorDark),
+    1px -1px 0 var(--colorDark), 1px 1px 0 var(--colorDark);
+}
+
+.info span,
+.social span {
+  margin: 0 5px;
+}
+
+.info i,
+.social i {
+  margin-right: 5px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section .content {
+  margin-bottom: 10px;
+}
+
+section .title {
+  border-bottom: 1px solid orange;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.date {
+  font-weight: 300;
+}
+
+.skills span {
+  border: 1px solid black;
+  border-radius: 5px;
+  line-height: 1.5rem;
+  margin-right: 4px;
+}
+
+.footer {
+  font-size: 11px;
+}
+.update {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.made {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
